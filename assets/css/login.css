@@ -1,0 +1,65 @@
+html,body{
+width: 100%;
+height: 100%;
+overflow: hidden;
+}
+
+body{
+    background:url(/zjc项目/assets/images/login_bg.jpg) top left /cover;
+}
+
+#hlogo{
+    margin-top: 20px;
+}
+
+
+/* ----------- */
+.loginBox{
+    width: 400px;
+    height: 310px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform:translate(-50%,-50%) ;
+    padding: 0 30px;
+}
+
+.loginBox .title{
+    margin:18px  0;
+    /* text-align: center; */
+}
+
+.loginBox .title img{
+    width: 170px;
+    margin: 0px auto; 
+    display: block;
+}
+
+
+
+ .Register{
+     display: none;
+}
+
+.Login{
+}
+
+#alog,#areg{
+    float: right;
+}
+
+.layui-form-item i{
+    position: absolute;
+    top: 11px;
+    left: 10px;
+    /* margin-right: 10px; */
+}
+
+.layui-form-item{
+    position: relative;
+}
+
+.layui-form-item input{
+    padding-left: 30px;
+}
