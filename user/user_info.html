@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="/zjc项目/assets/lib/layui/css/layui.css">
+<link rel="stylesheet" href="/zjc项目/assets/css/user/user_info.css">
+
+</head>
+<body>
+
+
+    <div class="layui-card">
+
+        <div class="layui-card-header">修改用户信息</div>
+
+
+        <div class="layui-card-body">
+            <form class="layui-form" id="userform" lay-filter="asd" >
+
+                <div class="layui-form-item" style="display: none;" >
+                    <label class="layui-form-label">id值</label>
+                    <div class="layui-input-block">
+                    <input readonly type="text"   required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input"  name="id">
+                    </div>
+                </div>
+
+
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">登录名称</label>
+                    <div class="layui-input-block">
+                    <input readonly type="text"   required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input"  name="username">
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">用户昵称</label>
+                    <div class="layui-input-block">
+                    <input type="text"   lay-verify="required|length|changename" placeholder="请输入标题" autocomplete="off" class="layui-input" name="nickname" id="inpnick">
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">用户邮箱</label>
+                    <div class="layui-input-block">
+                    <input type="text"    lay-verify="required|email" placeholder="请输入标题" autocomplete="off" class="layui-input" name="email" id="inpemail">
+                    </div>
+                </div>
+
+                <button type="submit" lay-submit  class="layui-btn">提交修改</button>
+                <button type="button" class="layui-btn layui-btn-primary" id="resetBtn">重置</button>
+
+            </form>
+        </div>
+
+
+    </div>
+
+
+
+
+    <script>
+    </script>
+
+
+
+<script src="/zjc项目/assets/lib/layui/layui.all.js"></script>
+<script src="/zjc项目/assets/lib/jquery.js"></script>
+<script src="/zjc项目/assets/js/user/user_info.js"></script>
+<script src="/zjc项目/assets/js/ajaxBase.js"></script>
+</body>
+</html>

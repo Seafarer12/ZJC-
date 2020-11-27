@@ -59,23 +59,24 @@ $("#registerForm").on("submit",function (e) {
 
 //   登陆的ajax代码
 $("#loginForm").on("submit",function (e) {
+
     console.log('denglu' );
 
     e.preventDefault();
-    let data=$("#loginForm").serialize()
-
+    let data=$(this).serialize()
+    console.log( data );
     $.ajax({
        type:"POST",
        url:"/api/login",
        data,
        success:function (res) {
-          if ( res.status!=0 ) {
+          if ( res.status!==0 ) {
               return layer.msg(res.message);
           }
 
           localStorage.setItem("token",res.token)
 
-          layer.msg('登陆成功，正在跳转', {
+          layer.msg('登陆中...', {
             icon: 1,
             time: 2000 //2秒关闭（如果不配置，默认是3秒）
           }, function(){

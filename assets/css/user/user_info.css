@@ -1,0 +1,19 @@
+body{
+    margin: 15px;
+}
+.layui-card{
+    background-color: #fff;
+}
+
+
+
+/* 表格 */
+.layui-input{
+    width: 380px;
+}   
+
+
+/* 按钮 */
+.layui-btn{
+    margin-left: 110px;
+}
